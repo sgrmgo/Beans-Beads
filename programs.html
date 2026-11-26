@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Programs · Beans & Beads</title>
+  <meta name="description" content="Browse the Beans & Beads seed library, join crafting workshops with seniors, and register as a volunteer in Las Piñas.">
+  <meta name="theme-color" content="#f3e3d3">
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preload" href="fonts/fredoka-one-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="is-loading">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="vine" aria-hidden="true"><div class="vine-fill"></div></div>
+  <div class="page-wipe" aria-hidden="true">
+    <div class="text-center"><img src="images/logo.svg" alt=""><div class="seeds"><i></i><i></i><i></i></div></div>
+  </div>
+
+  <header class="site-nav">
+    <nav aria-label="Main">
+      <a class="brand" href="index.html" aria-label="Beans &amp; Beads home">
+        <img class="brand-logo" src="images/logo.svg" alt="">
+        <span class="brand-name">Beans &amp; Beads</span>
+      </a>
+      <button class="menu-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <div class="offcanvas offcanvas-end menu-panel" tabindex="-1" id="menu" aria-labelledby="menuLabel">
+    <div class="offcanvas-header">
+      <h2 class="offcanvas-title" id="menuLabel">Menu</h2>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close menu"></button>
+    </div>
+    <div class="offcanvas-body pt-0">
+      <a class="menu-link" href="index.html">Home</a>
+
+      <button class="menu-link menu-toggle collapsed" type="button"
+              data-bs-toggle="collapse" data-bs-target="#programsMenu"
+              aria-expanded="false" aria-controls="programsMenu">
+        Programs <i class="bi bi-chevron-down" aria-hidden="true"></i>
+      </button>
+      <div class="collapse menu-sub" id="programsMenu">
+        <a href="programs.html#beans">Beans · Seed Library</a>
+        <a href="programs.html#beads">Beads · Craft Workshops</a>
+        <a href="programs.html#register">Get Involved · Register</a>
+      </div>
+
+      <a class="menu-link active" href="about.html">About &amp; Contact</a>
+      <p class="mt-4 mb-0 small" style="color:var(--mint)">Growing food. Repurposing what we discard. Las Piñas City.</p>
+    </div>
+  </div>
+  
+  <main id="main">
+
+    <!-- ============ BEANS ============ -->
+    <section id="beans" class="b-hero">
+      <div class="container">
+        <h1 class="reveal"><span class="d-sm-none">Agriculture &amp; Sustainability</span><span class="d-none d-sm-inline">Agriculture and Sustainability</span></h1>
+        <p class="reveal" style="--d:.06s">Cultivating green spaces and food security in Las Pinas through seeds, urban gardening, and collective action.</p>
+        <div class="b-btns reveal" style="--d:.12s">
+          <a class="b-btn" href="#seed-library">Browse Seed Library</a>
+          <a class="b-btn white" href="#register">Register for Planting Day</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="seed-library" class="seed-lib">
+      <div class="container">
+        <h2 class="reveal">Seed Library Directory</h2>
+        <div class="seed-grid">
+          <article class="seed seed-item reveal" style="--d:0.00s">
+            <div class="ph"><img src="images/seed-kangkong.jpg" alt="Water spinach growing in black pots" loading="lazy"></div>
+            <h3>Kangkong (Water Spinach)</h3>
+            <p class="meta">25–35 Days • Full Sun</p>
+            <div class="brow">
+              <button class="sb fill" type="button" data-seed-action="request" data-seed="Kangkong (Water Spinach)">Request Seeds</button>
+              <button class="sb out" type="button" data-seed-action="donate" data-seed="Kangkong (Water Spinach)">Donate Seeds</button>
+            </div>
+          </article>
+          <article class="seed seed-item reveal" style="--d:0.07s">
+            <div class="ph"><img src="images/seed-pechay.jpg" alt="Pechay cabbage growing in a garden bed" loading="lazy"></div>
+            <h3>Pechay (Chinese Cabbage)</h3>
+            <p class="meta">30–45 Days • Partial to Full Sun</p>
+            <div class="brow">
+              <button class="sb fill" type="button" data-seed-action="request" data-seed="Pechay (Chinese Cabbage)">Request Seeds</button>
+              <button class="sb out" type="button" data-seed-action="donate" data-seed="Pechay (Chinese Cabbage)">Donate Seeds</button>
+            </div>
+          </article>
+          <article class="seed seed-item reveal" style="--d:0.14s">
+            <div class="ph"><img src="images/seed-sitaw.jpg" alt="Yardlong beans hanging from vines" loading="lazy"></div>
+            <h3>Sitaw (Yardlong Bean)</h3>
+            <p class="meta">50–60 Days · Full Sun</p>
+            <div class="brow">
+              <button class="sb fill" type="button" data-seed-action="request" data-seed="Sitaw (Yardlong Bean)">Request Seeds</button>
+              <button class="sb out" type="button" data-seed-action="donate" data-seed="Sitaw (Yardlong Bean)">Donate Seeds</button>
+            </div>
+          </article>
+          <article class="seed seed-item reveal" style="--d:0.21s">
+            <div class="ph"><img src="images/seed-okra.jpg" alt="Okra pod on the plant" loading="lazy"></div>
+            <h3>Okra (Lady's Finger)</h3>
+            <p class="meta">45–55 Days • Full Sun</p>
+            <div class="brow">
+              <button class="sb fill" type="button" data-seed-action="request" data-seed="Okra (Lady's Finger)">Request Seeds</button>
+              <button class="sb out" type="button" data-seed-action="donate" data-seed="Okra (Lady's Finger)">Donate Seeds</button>
+            </div>
+          </article>
+          <article class="seed seed-item reveal" style="--d:0.00s">
+            <div class="ph"><img src="images/seed-kamatis.jpg" alt="Ripe native tomatoes on the vine" loading="lazy"></div>
+            <h3>Kamatis (Native Tomato)</h3>
+            <p class="meta">55–65 Days · Full Sun</p>
+            <div class="brow">
+              <button class="sb fill" type="button" data-seed-action="request" data-seed="Kamatis (Native Tomato)">Request Seeds</button>
+              <button class="sb out" type="button" data-seed-action="donate" data-seed="Kamatis (Native Tomato)">Donate Seeds</button>
+            </div>
+          </article>
+          <article class="seed seed-item reveal" style="--d:0.07s">
+            <div class="ph"><img src="images/seed-sigarilyas.jpg" alt="Winged bean pods among green leaves" loading="lazy"></div>
+            <h3>Sigarilyas (Winged Bean)</h3>
+            <p class="meta">75–85 Days • Partial Sun</p>
+            <div class="brow">
+              <button class="sb fill" type="button" data-seed-action="request" data-seed="Sigarilyas (Winged Bean)">Request Seeds</button>
+              <button class="sb out" type="button" data-seed-action="donate" data-seed="Sigarilyas (Winged Bean)">Donate Seeds</button>
+            </div>
+          </article>
+          <article class="seed seed-item reveal" style="--d:0.14s">
+            <div class="ph"><img src="images/seed-talong.jpg" alt="Native eggplants hanging from the plant" loading="lazy"></div>
+            <h3>Talong (Native Eggplant)</h3>
+            <p class="meta">60–75 Days • Full Sun</p>
+            <div class="brow">
+              <button class="sb fill" type="button" data-seed-action="request" data-seed="Talong (Native Eggplant)">Request Seeds</button>
+              <button class="sb out" type="button" data-seed-action="donate" data-seed="Talong (Native Eggplant)">Donate Seeds</button>
+            </div>
+          </article>
+          <article class="seed seed-item reveal" style="--d:0.21s">
+            <div class="ph"><img src="images/seed-patani.jpg" alt="Lima bean pods among leaves" loading="lazy"></div>
+            <h3>Patani (Lima Bean)</h3>
+            <p class="meta">80–100 Days • Full Sun</p>
+            <div class="brow">
+              <button class="sb fill" type="button" data-seed-action="request" data-seed="Patani (Lima Bean)">Request Seeds</button>
+              <button class="sb out" type="button" data-seed-action="donate" data-seed="Patani (Lima Bean)">Donate Seeds</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BEADS ============ -->
+    <section id="beads" class="beads">
+      <div class="container">
+        <div class="cr-hero">
+          <img class="reveal reveal-left" src="images/beads-hero.jpg" alt="A volunteer in a yellow cardigan showing a colorful upcycled craft to seniors at a table" width="720" height="378">
+          <div class="reveal reveal-right">
+            <h1>Crafting &amp; Upcycling<br>with Seniors</h1>
+            <p>Join our therapeutic crafting sessions hosted in partnership with local senior care facilities. We create meaningful intergenerational connections through hands-on upcycling projects, artistic expression, and shared community storytelling.</p>
+            <a class="btn-pill mint" href="#workshops">Register for Workshop</a>
+          </div>
+        </div>
+        <div class="in">
+          <h2 class="up-h2 reveal" id="workshops">Upcoming Workshops</h2>
+          <div class="ws-grid">
+          <article class="ws workshop reveal" data-id="w1" data-iso="2026-11-05" data-date="November 5, 2026" data-cap="18" data-taken="15">
+            <div class="ph"><img src="images/workshop-1.jpg" alt="A smiling senior in a red apron painting at a craft table" loading="lazy"></div>
+            <div class="body">
+              <div class="date">November 5, 2026</div>
+              <div class="title">Crafting &amp; Upcycling<br>with Seniors</div>
+              <span class="slots-text"></span><div class="slot-bar" aria-hidden="true"><i></i></div>
+              <button class="btn-pill mint" type="button" data-workshop>Register</button>
+            </div>
+          </article>
+          <article class="ws workshop reveal" data-id="w2" data-iso="2026-11-15" data-date="November 15, 2026" data-cap="18" data-taken="17">
+            <div class="ph"><img src="images/workshop-2.jpg" alt="Seniors and a volunteer laughing while crafting together" loading="lazy"></div>
+            <div class="body">
+              <div class="date">November 15, 2026</div>
+              <div class="title">Crafting &amp; Upcycling<br>with Seniors</div>
+              <span class="slots-text"></span><div class="slot-bar" aria-hidden="true"><i></i></div>
+              <button class="btn-pill mint" type="button" data-workshop>Register</button>
+            </div>
+          </article>
+          <article class="ws workshop reveal" data-id="w3" data-iso="2026-11-25" data-date="November 25, 2026" data-cap="20" data-taken="9">
+            <div class="ph"><img src="images/workshop-3.jpg" alt="A group of seniors in aprons crafting at a long table" loading="lazy"></div>
+            <div class="body">
+              <div class="date">November 25, 2026</div>
+              <div class="title">Crafting &amp; Upcycling<br>with Seniors</div>
+              <span class="slots-text"></span><div class="slot-bar" aria-hidden="true"><i></i></div>
+              <button class="btn-pill mint" type="button" data-workshop>Register</button>
+            </div>
+          </article>
+          </div>
+          <div class="wg">
+            <aside class="wishlist reveal reveal-left" aria-labelledby="wishTitle">
+              <h3 id="wishTitle">Material Donation<br> Wishlist</h3>
+              <label class="wish"><input type="checkbox"><span>Clean fabric scraps &amp; old linens</span></label><label class="wish"><input type="checkbox"><span>Plastic bottle caps &amp; cardboard containers</span></label><label class="wish"><input type="checkbox"><span>Yarn, embroidery floss &amp; ribbons</span></label><label class="wish"><input type="checkbox"><span>Wooden beads, buttons &amp; craft wire</span></label><label class="wish"><input type="checkbox"><span>Non-toxic paints &amp; washable brushes</span></label>
+            </aside>
+            <div class="gal reveal reveal-right">
+              <h2>Community Craft Gallery</h2>
+              <div class="gal-grid">
+                <button type="button" aria-label="Open photo 1"><img src="images/gallery-1.jpg" alt="Seniors threading beads and painting at a craft table" loading="lazy"></button>
+                <button type="button" aria-label="Open photo 2"><img src="images/gallery-2.jpg" alt="Trays of colorful beads and a hand picking pieces" loading="lazy"></button>
+                <button type="button" aria-label="Open photo 3"><img src="images/gallery-3.jpg" alt="Craft supplies spread over a patterned blanket" loading="lazy"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REGISTRATION ============ -->
+    <section id="register" class="reg">
+      <div class="container">
+        <div class="reg-head reveal">
+          <h1>GET INVOLVED</h1>
+          <p>Cultivating green spaces and food security in Las Pinas through seeds, urban gardening, and collective action.</p>
+        </div>
+
+        <div class="steps reveal reveal-pop">
+          <h2>Step-by-step volunteer process</h2>
+          <div class="steps-row">
+            <div class="step"><span class="pill">Step 1</span><h3>Choose Track</h3><p>Select Agriculture or Crafting</p></div>
+            <div class="step-arrow" aria-hidden="true"><i class="bi bi-arrow-right"></i></div>
+            <div class="step"><span class="pill">Step 2</span><h3>Register &amp; Attend</h3><p>Attend orientations and sessions</p></div>
+            <div class="step-arrow" aria-hidden="true"><i class="bi bi-arrow-right"></i></div>
+            <div class="step"><span class="pill">Step 3</span><h3>Log &amp; Certify</h3><p>Earn hours and request certification</p></div>
+          </div>
+        </div>
+
+        <div class="reg-cols">
+          <div class="reg-info reveal">
+            <h2 class="lab">Volunteer Registration</h2>
+            <p>Ready to lend a hand? We coordinate all volunteer batches, task assignment, and schedule confirmations through our official registration portal.</p>
+            <div class="prep-row">
+              <div>
+                <h3 class="lab prep-l">What to prepare</h3>
+                <ul>
+                  <li><i class="bi bi-person-vcard"></i> Valid Student / Government ID</li>
+                  <li><i class="bi bi-calendar3"></i> Preferred Schedule</li>
+                  <li><i class="bi bi-check-circle"></i> Preferred Track</li>
+                </ul>
+              </div>
+              <div>
+                <a class="reg-btn" data-form-link href="#" target="_blank" rel="noopener">Open registration form <i class="bi bi-box-arrow-up-right"></i></a>
+                <p class="reg-note">Opens as external Google Form · Takes 3 minutes to complete</p>
+              </div>
+            </div>
+          </div>
+          <div class="gcard reveal" style="--d:.1s">
+            <h2 class="lab">Service Hour Validation Guidelines</h2>
+            <ul>
+              <li>Suitable for NTSP / CHED community hours</li>
+              <li>Minimum 4-hour volunteer sessions</li>
+              <li>Active task validation by site coordinators</li>
+              <li>Digital certificate issued upon completion</li>
+            </ul>
+          </div>
+          <div class="gcard faq reveal" style="--d:.2s">
+            <h2 class="lab">Frequently Asked Questions</h2>
+            <div class="accordion accordion-flush" id="faq">
+              <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f1" aria-expanded="false">Who can volunteer?</button></h3>
+                <div id="f1" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">Students, residents, and community gardeners from Las Piñas and nearby areas. You will need a valid student or government ID when you register.</div></div></div>
+              <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f2" aria-expanded="false">What should I wear?</button></h3>
+                <div id="f2" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">For planting days, wear closed shoes and clothes you don't mind getting muddy. For craft workshops, wear something comfortable that can handle a little paint.</div></div></div>
+              <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f3" aria-expanded="false">How are service hours tracked?</button></h3>
+                <div id="f3" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">Site coordinators log your attendance and tasks every session. Once you finish the required hours, request your digital certificate.</div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer" id="contact-footer">
+  <div class="container footer-inner">
+    <p class="footer-copy mb-0">&copy; <span data-year>2026</span> Beans &amp; Beads &middot; Las Piñas City</p>
+    <div class="footer-right">
+      <p class="footer-tag mb-0">Growing food. Repurposing what we discard.</p>
+    </div>
+  </div>
+</footer>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index:3000">
+    <div id="appToast" class="toast align-items-center" role="status" aria-live="polite" aria-atomic="true">
+      <div class="d-flex"><div class="toast-body"></div><button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button></div>
+    </div>
+  </div>
+
+  <!-- Seed request / donate modal -->
+  <div class="modal fade" id="seedModal" tabindex="-1" aria-labelledby="seedModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+      <form id="seedForm" novalidate>
+        <div class="modal-header"><h2 class="modal-title h4" id="seedModalTitle">Request seeds</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+        <div class="modal-body vstack gap-3">
+          <input type="hidden" name="seed" id="seedName">
+          <div><label class="form-label" for="seedFullname">Full name</label><input class="form-control" id="seedFullname" name="fullname" required autocomplete="name"><div class="invalid-feedback">Please tell us your name.</div></div>
+          <div><label class="form-label" for="seedEmail">Email or mobile number</label><input class="form-control" id="seedEmail" name="contact" required autocomplete="email"><div class="invalid-feedback">We need a way to reach you.</div></div>
+          <div><label class="form-label" for="seedQty" id="seedQtyLabel">How many packets do you need?</label><select class="form-select" id="seedQty" name="qty" required><option value="" selected disabled>Choose…</option><option>1</option><option>2</option><option>3</option><option>4–5</option></select><div class="invalid-feedback">Pick a quantity.</div></div>
+        </div>
+        <div class="modal-footer border-0"><button type="button" class="btn btn-ghost" data-bs-dismiss="modal">Cancel</button><button type="submit" class="btn btn-soil" id="seedSubmit">Send request</button></div>
+      </form>
+    </div></div>
+  </div>
+
+  <!-- Workshop registration modal -->
+  <div class="modal fade" id="workshopModal" tabindex="-1" aria-labelledby="workshopTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+      <form id="workshopForm" novalidate>
+        <div class="modal-header"><h2 class="modal-title h4" id="workshopTitle">Reserve a seat · <span id="workshopDate"></span></h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+        <div class="modal-body vstack gap-3">
+          <input type="hidden" name="workshop" id="workshopId">
+          <div><label class="form-label" for="wsName">Full name</label><input class="form-control" id="wsName" name="fullname" required autocomplete="name"><div class="invalid-feedback">Please tell us your name.</div></div>
+          <div><label class="form-label" for="wsEmail">Email</label><input class="form-control" type="email" id="wsEmail" name="email" required autocomplete="email"><div class="invalid-feedback">Enter a valid email.</div></div>
+          <p class="small mb-0 dm" style="font-family:var(--font-body)">Bring a valid ID. For service-hour credit, also complete the <a href="#register" data-bs-dismiss="modal">volunteer registration form</a>.</p>
+        </div>
+        <div class="modal-footer border-0"><button type="button" class="btn btn-ghost" data-bs-dismiss="modal">Cancel</button><button type="submit" class="btn btn-soil">Reserve my seat</button></div>
+      </form>
+    </div></div>
+  </div>
+
+  <!-- Gallery lightbox -->
+  <div class="modal fade" id="lightbox" tabindex="-1" aria-label="Photo viewer" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content p-2 text-center">
+      <button type="button" class="btn-close ms-auto m-2" data-bs-dismiss="modal" aria-label="Close"></button>
+      <img class="lightbox-img mx-auto mw-100" src="" alt="">
+    </div></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
